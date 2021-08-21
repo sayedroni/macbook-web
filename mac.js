@@ -14,7 +14,7 @@ function Delivery(deliveryCharge) {
     const DeliveryCost = document.getElementById('deliveryCost');
     DeliveryCost.innerText = deliveryCharge;
 }
-
+//Function For Total Calculation...
 function totalprice() {
     const bestcost = document.getElementById('bestPrice');
     const bestPrice = Number(bestcost.innerText);
@@ -43,7 +43,7 @@ function totalprice() {
     ftotal.innerText = totalAmount;
     return totalAmount;
 }
-
+//Function For Promo Code...
 function promoCode() {
     const total = totalprice();
     const promoInput = document.getElementById('promoInput').value;
