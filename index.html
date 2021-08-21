@@ -16,96 +16,109 @@
 <body>
     <!-- main tag -->
     <main>
-     <section class="mt-5">
-        <div class="container">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-4 me-5">
-                        <img src="images/mac.png" alt="">
-                    </div>
-                    <div class="col-7">
-                        <div class="row">
-                            <h1>Customize your Blue 24‑inch iMac with Apple M1 chip.</h1>
-                            <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports   Magic Mouse  Magic Keyboard - US English</p>
+        <section class="mt-5">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4 me-5">
+                            <img src="images/mac.png" alt="">
                         </div>
-                        <div class="row my-5">
-                            <h5>Memory</h5>
-                            <div class="col-12">
-                                <button type="button" class="btn btn-outline-secondary d-inline">8GB unified memory</button>
-                                <button type="button" class="btn btn-outline-secondary d-inline">16GB unified memory</button>
+                        <div class="col-7">
+                            <div class="row">
+                                <h1>Customize your Blue 24‑inch iMac with Apple M1 chip.</h1>
+                                <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core
+                                    GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt
+                                    / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
                             </div>
-                        </div>
-                        <div class="row my-5">
-                            <h5>Storage</h5>
-                            <div class="col-12">
-                                <button type="button" class="btn btn-outline-secondary d-inline">256GB SSD Storage</button>
-                                <button type="button" class="btn btn-outline-secondary d-inline">512GB SSD Storage</button>
-                                <button type="button" class="btn btn-outline-secondary d-inline">1TB SSD Storage</button>
+                            <div class="row my-5">
+                                <h5>Memory</h5>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-outline-secondary d-inline"
+                                        id="button-8GBram">8GB unified memory</button>
+                                    <button type="button" class="btn btn-outline-secondary d-inline"
+                                        id="button-16GBram">16GB unified memory</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row my-5">
-                            <h5>Chose your delivery option </h5>
-                            <div class="col-12">
-                                <button type="button" class="btn btn-outline-secondary d-inline">Friday,Aug 25 FREE Prime Delivery</button>
-                                <button type="button" class="btn btn-outline-secondary d-inline">Friday,Aug 21 Delivery Charge $20</button>
+                            <div class="row my-5">
+                                <h5>Storage</h5>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-outline-secondary d-inline"
+                                        id="button-256GBssd">256GB SSD Storage</button>
+                                    <button type="button" class="btn btn-outline-secondary d-inline"
+                                        id="button-512GBssd">512GB SSD Storage</button>
+                                    <button type="button" class="btn btn-outline-secondary d-inline"
+                                        id="button-1TBssd">1TB SSD Storage</button>
+                                </div>
                             </div>
-                        </div>
+                            <div class="row my-5">
+                                <h5>Chose your delivery option </h5>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-outline-secondary d-inline"
+                                        id="button-deliveryFree">Friday,Aug 25 FREE Prime Delivery</button>
+                                    <button type="button" class="btn btn-outline-secondary d-inline"
+                                        id="button-deliveryCharge">Friday,Aug 21 Delivery Charge $20</button>
+                                </div>
+                            </div>
 
-                        <!-- Culculation Part -->
-                        <div class="row">
-                            <ul class="col-6">
-                                <li class=" d-flex justify-content-between align-items-center border-bottom py-2 border-bottom">
-                                  <h5>Best Price</h5>
-                                  <h5>$<span>1299</span></h5>
-                                </li>
-                                <li class=" d-flex justify-content-between align-items-center border-bottom py-2 border-bottom">
-                                  <h5>Extra Memory Cost</h5>
-                                  <h5>$<span>0</span></h5>
-                                </li>
-                                <li class=" d-flex justify-content-between align-items-center border-bottom py-2 border-bottom">
-                                  <h5>Extra Storage Cost</h5>
-                                  <h5>$<span>0</span></h5>
-                                </li>
-                                <li class=" d-flex justify-content-between align-items-center border-bottom py-2  border-bottom border-2 border-dark">
-                                  <h5>Delivery Charge</h5>
-                                  <h5>$<span>0</span></h5>
-                                </li>
-                                <li class=" d-flex justify-content-between align-items-center border-bottom py-2 border-bottom">
-                                  <h5>Total Price</h5>
-                                  <h5>$<span>0</span></h5>
-                                </li>
-                              </ul>
-                        </div>
-                        <!-- promo code  -->
-                        <div class="row">
-                            <h5>Add Promo Code</h5>
+                            <!-- Culculation Part -->
+                            <div class="row">
+                                <ul class="col-6">
+                                    <li
+                                        class=" d-flex justify-content-between align-items-center border-bottom py-2 border-bottom">
+                                        <h5>Best Price</h5>
+                                        <h5>$<span id="bestPrice">1299</span></h5>
+                                    </li>
+                                    <li
+                                        class=" d-flex justify-content-between align-items-center border-bottom py-2 border-bottom">
+                                        <h5>Extra Memory Cost</h5>
+                                        <h5>$<span id="extra-memoryCost">0</span></h5>
+                                    </li>
+                                    <li
+                                        class=" d-flex justify-content-between align-items-center border-bottom py-2 border-bottom">
+                                        <h5>Extra Storage Cost</h5>
+                                        <h5>$<span id="StorageCost">0</span></h5>
+                                    </li>
+                                    <li
+                                        class=" d-flex justify-content-between align-items-center border-bottom py-2  border-bottom border-2 border-dark">
+                                        <h5>Delivery Charge</h5>
+                                        <h5>$<span id="deliveryCost">0</span></h5>
+                                    </li>
+                                    <li
+                                        class=" d-flex justify-content-between align-items-center border-bottom py-2 border-bottom">
+                                        <h5>Total Price</h5>
+                                        <h5>$<span id="totalCost">1299</span></h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- promo code  -->
+                            <div class="row">
+                                <h5>Add Promo Code</h5>
                                 <div class="input-group mb-5">
-                                    <input type="text" class="" >
-                                    <button class="btn btn-danger" type="button" id="button-addon2">Apply</button>
-                                  </div>
-                           
+                                    <input type="text" id="promoInput">
+                                    <button class="btn btn-danger" type="button" id="button-promo">Apply</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 
-<!-- footer section  -->
+    <!-- footer section  -->
     <footer>
         <div class="container">
-         <div class="container-fluid border-top border-2">
-            <div class="row">
-              <div class="col-12 text-center my-2">
-                <h2>Total: $<span>1299</span> </h2>
-             </div>
-         </div>
+            <div class="container-fluid border-top border-2">
+                <div class="row">
+                    <div class="col-12 text-center my-2">
+                        <h2>Total: $<span id="footerTotal">1299</span></h2>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     </footer>
 
+    <!-- javascript link  -->
     <script src="mac.js"></script>
 </body>
-
 </html>
